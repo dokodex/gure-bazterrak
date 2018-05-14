@@ -1,0 +1,97 @@
+$benito-olatz-max-width:$grid;
+$benito-olatz-title-color:white;
+$benito-olatz-icon-color:white;
+$benito-olatz-font-family:$font-family-first;
+
+.benito-olatz{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: $benito-olatz-max-width;
+  position: relative;
+  z-index: 5; 
+}
+
+.benito-olatz__box{
+  flex: 0 1 calc( 100% );
+  height: 50%;
+}
+
+.benito-olatz__box--grid{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding-top: 30%;
+}
+
+.benito-olatz__box--benito{
+  background: transparent url('../images/benito-olatz/benito.jpg') no-repeat;
+  background-size:100%;
+}
+
+.benito-olatz__box--olatz{
+  background: transparent url('../images/benito-olatz/olatz.jpg') no-repeat;
+  background-size:100%;
+}
+
+.benito-olatz__title{
+  color: $benito-olatz-title-color;
+  font-size: 1rem;
+  font-family:$benito-olatz-font-family;
+  padding: 2% 0% 2% 2%;
+}
+
+.benito-olatz__rs{
+  padding: 2% 0% 2% 2%;
+}
+
+.icon{
+  fill: $benito-olatz-icon-color;
+  height: 0.7rem;
+  padding: 0 2rem 0 0;
+}
+
+.benito-olatz__rs-span{
+  display: none;
+}
+
+@media #{$breakpoints-medium} {
+  .benito-olatz__title{
+    font-size: 2rem;
+  }
+  .icon{    
+    opacity: 1;
+    height: 1.5rem;
+    transition: opacity .5s;
+  }
+
+  .benito-olatz__box:hover{
+    .icon{
+      visibility: visible;
+    }    
+  }
+}
+
+@media #{$breakpoints-large} {  
+  .benito-olatz__title{
+    font-size: 2rem;
+  }
+  .icon{    
+    opacity: 0;
+    height: 1.5rem;
+    transform: scale(0.8);
+    transition: opacity .3s,transform 1s;
+  }
+
+  .benito-olatz__box:hover{
+
+    .icon{
+      opacity: 1;
+      transform: scale(1);
+    }    
+  }
+}
+
+@media #{$breakpoints-xlarge} {
+
+}
