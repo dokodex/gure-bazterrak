@@ -60,14 +60,17 @@ $benito-olatz-font-family:$font-family-first;
     font-size: 2rem;
   }
   .icon{    
-    opacity: 1;
+    opacity: 0;
     height: 1.5rem;
-    transition: opacity .5s;
+    transform: scale(0.8);
+    transition: opacity .3s,transform 1s;
   }
 
   .benito-olatz__box:hover{
+
     .icon{
-      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
     }    
   }
 }
@@ -93,5 +96,21 @@ $benito-olatz-font-family:$font-family-first;
 }
 
 @media #{$breakpoints-xlarge} {
+  .benito-olatz__title{
+    font-size: 2rem;
+  }
+  .icon{    
+    opacity: 0;
+    height: 1.5rem;
+    transform: scale(0.8);
+    transition: opacity .3s,transform 1s;
+  }
 
+  .benito-olatz__box:hover{
+
+    .icon{
+      opacity: 1;
+      transform: scale(1);
+    }    
+  }
 }
