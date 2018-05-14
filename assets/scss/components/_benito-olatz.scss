@@ -45,7 +45,7 @@ $benito-olatz-font-family:$font-family-first;
   padding: 2% 0% 2% 2%;
 }
 
-.icon{
+.benito-olatz__rs .icon{
   fill: $benito-olatz-icon-color;
   height: 0.7rem;
   padding: 0 2rem 0 0;
@@ -59,7 +59,7 @@ $benito-olatz-font-family:$font-family-first;
   .benito-olatz__title{
     font-size: 2rem;
   }
-  .icon{    
+  .benito-olatz__rs .icon{    
     opacity: 0;
     height: 1.5rem;
     transform: scale(0.8);
@@ -68,7 +68,7 @@ $benito-olatz-font-family:$font-family-first;
 
   .benito-olatz__box:hover{
 
-    .icon{
+    .benito-olatz__rs .icon{
       opacity: 1;
       transform: scale(1);
     }    
@@ -79,7 +79,7 @@ $benito-olatz-font-family:$font-family-first;
   .benito-olatz__title{
     font-size: 2rem;
   }
-  .icon{    
+  .benito-olatz__rs .icon{    
     opacity: 0;
     height: 1.5rem;
     transform: scale(0.8);
@@ -99,7 +99,7 @@ $benito-olatz-font-family:$font-family-first;
   .benito-olatz__title{
     font-size: 2rem;
   }
-  .icon{    
+  .benito-olatz__rs .icon{    
     opacity: 0;
     height: 1.5rem;
     transform: scale(0.8);
@@ -108,7 +108,7 @@ $benito-olatz-font-family:$font-family-first;
 
   .benito-olatz__box:hover{
 
-    .icon{
+    .benito-olatz__rs .icon{
       opacity: 1;
       transform: scale(1);
     }    
