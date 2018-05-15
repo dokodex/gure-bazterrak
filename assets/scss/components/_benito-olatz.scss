@@ -61,7 +61,7 @@ $benito-olatz-font-family:$font-family-first;
   }
   .benito-olatz__rs .icon{    
     opacity: 0;
-    height: 1.5rem;
+    height: 1.8rem;
     transform: scale(0.8);
     transition: opacity .3s,transform 1s;
   }
@@ -81,14 +81,14 @@ $benito-olatz-font-family:$font-family-first;
   }
   .benito-olatz__rs .icon{    
     opacity: 0;
-    height: 1.5rem;
+    height: 1.8rem;
     transform: scale(0.8);
     transition: opacity .3s,transform 1s;
   }
 
   .benito-olatz__box:hover{
 
-    .icon{
+    benito-olatz__rs .icon{
       opacity: 1;
       transform: scale(1);
     }    
@@ -101,7 +101,7 @@ $benito-olatz-font-family:$font-family-first;
   }
   .benito-olatz__rs .icon{    
     opacity: 0;
-    height: 1.5rem;
+    height: 1.8rem;
     transform: scale(0.8);
     transition: opacity .3s,transform 1s;
   }
