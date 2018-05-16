@@ -1,0 +1,116 @@
+$show-events-max-width:$grid;
+$show-events-info-color-blue: $color-blue-event;
+$show-events-info-color-orange: $color-orange-event;
+$show-events-info-font-color-white: white;
+$show-events-title-font-family: $font-family-first;
+
+.show-events{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $show-events-max-width;
+  position: relative;
+  z-index: 5; 
+}
+
+.show-events__event{
+  flex: 0 1 calc(100%);
+  padding: 2%;
+}
+
+.show-events__box{
+  background: transparent url('../images/benito-olatz/benito.jpg') no-repeat;
+  background-size: auto 110%;
+  height: 15rem;
+  overflow: hidden;
+  transition: background-size .2s;
+}
+
+.show-events__grid{
+  display: grid;
+  grid-template-columns: 20% auto;
+  height: 100%;
+  width: 100%;
+}
+
+.show-events__info{
+  background-color: $color-blue-event;
+  color: $show-events-info-font-color-white;
+  grid-column: 1;
+  text-align: center;  
+}
+
+.show-events__date{
+  padding-top: 1rem;
+}
+
+.show-events__week-day{
+
+}
+
+.show-events__day{
+  font-size: 2rem;
+}
+
+.show-events__month{
+  font-size: 1rem;
+}
+
+.show-events__time-price{
+  padding-top: 5rem;
+}
+
+.show-events__time{
+  font-size: 1rem;
+}
+
+.show-events__price{
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.show-events__title{
+  font-family: $show-events-title-font-family;
+  font-size: 2rem;
+}
+
+@media #{$breakpoints-medium} {
+
+}
+
+@media #{$breakpoints-large} {
+  .show-events__event{
+    flex: 0 1 calc(100%/3);
+    padding: 2%;
+  }
+
+  .show-events__box:hover{    
+    background-size: auto 120%;
+
+    .show-events__info{
+      background-color: $show-events-info-color-orange;
+      height: 100%;
+    }
+
+    .show-events__time-price{
+      transform: translate(0px,0rem);
+      visibility: visible;
+    }
+  }
+
+  .show-events__info{
+    height: 5rem;
+    transition: height .3s, background-color .2s;
+  }
+
+  .show-events__time-price{    
+    transform: translate(0px,3rem);
+    transition: visibility .1s, transform .3s;
+    visibility: hidden;
+  }
+}
+
+@media #{$breakpoints-xlarge} {
+
+}
