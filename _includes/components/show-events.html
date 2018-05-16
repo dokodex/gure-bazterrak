@@ -1,56 +1,23 @@
 <section class="section show-events">
+  {% for event in site.data.eventos %}
   <div class="show-events__event">
     <div class="show-events__box">
+      <img class="show-events__img" src="{{ event.img }}" alt=""/>
       <div class="show-events__grid">
         <div class="show-events__info">
           <div class="show-events__date">
-            <div class="show-events__week-day">Jueves</div>
-            <div class="show-events__day">15</div>
-            <div class="show-events__month">MAY</div>
+            <div class="show-events__week-day">{{ event.dia-semana }}</div>
+            <div class="show-events__day">{{ event.dia }}</div>
+            <div class="show-events__month">{{ event.mes }}</div>
           </div>
           <div class="show-events__time-price">
-            <div class="show-events__time">20:00</div>
-            <div class="show-events__price">15€</div>
+            <div class="show-events__time">{{ event.hora }}</div>
+            <div class="show-events__price">{{ event.precio }}</div>
           </div>
         </div>
       </div>
     </div>
-    <h2 class="show-events__title">Concierto de Benito Lertxundi</h2>
+    <h2 class="show-events__title">{{ event.title }}</h2>
   </div>
-  <div class="show-events__event">
-    <div class="show-events__box">
-      <div class="show-events__grid">
-        <div class="show-events__info">
-          <div class="show-events__date">
-            <div class="show-events__week-day">Jueves</div>
-            <div class="show-events__day">15</div>
-            <div class="show-events__month">MAY</div>
-          </div>
-          <div class="show-events__time-price">
-            <div class="show-events__time">20:00</div>
-            <div class="show-events__price">5€</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <h2 class="show-events__title">Concierto de Benito Lertxundi</h2>
-  </div>
-  <div class="show-events__event">
-    <div class="show-events__box">
-      <div class="show-events__grid">
-        <div class="show-events__info">
-          <div class="show-events__date">
-            <div class="show-events__week-day">Jueves</div>
-            <div class="show-events__day">15</div>
-            <div class="show-events__month">MAY</div>
-          </div>
-          <div class="show-events__time-price">
-            <div class="show-events__time">20:00</div>
-            <div class="show-events__price">5€</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <h2 class="show-events__title">Concierto de Benito Lertxundi</h2>
-  </div>
+  {% endfor %}
 </section>
