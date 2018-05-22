@@ -4,18 +4,7 @@
 
   dia: 15
 
-  hora: "20:00"
-
-  precio: 5€
-
-  img: assets/images/benito-olatz/benito.jpg
-
-
-- title: Concierto de Benito Lertxundi
-  
-  dia-semana: Jueves
-
-  dia: 15
+  mes: MAY
 
   hora: "20:00"
 
@@ -29,6 +18,23 @@
   dia-semana: Jueves
 
   dia: 15
+
+  mes: MAY
+
+  hora: "20:00"
+
+  precio: 5€
+
+  img: assets/images/benito-olatz/benito.jpg
+
+
+- title: Concierto de Benito Lertxundi
+  
+  dia-semana: Jueves
+
+  dia: 15
+
+  mes: MAY
 
   hora: "20:00"
 
