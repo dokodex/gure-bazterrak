@@ -1,0 +1,86 @@
+$contact-max-width:$grid;
+$contact-font-family:$font-family-first;
+$contact-h2-font-color:$color-gray-content;
+$contact-description-font-family:$font-family-second;
+
+.contact{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: $contact-max-width;
+  position: relative;
+  z-index: 5;
+}
+
+.contact__box{
+  flex: 0 1 calc(100%);
+  font-family: $contact-font-family;
+  text-align: center;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.contact__title{
+  font-size: 1rem;
+}
+
+.contact__mail, .contact__tlf{
+  color: $contact-h2-font-color;  
+}
+
+.contact__description{
+  font-family: $contact-description-font-family;
+}
+
+@media #{$breakpoints-medium} {
+  .contact__title{
+    font-size: 2rem;
+  }
+  .contact__mail, .contact__tlf{
+    font-size: 1rem;
+  }
+  .contact__description{
+    font-size: .8rem;
+  }
+}
+
+@media #{$breakpoints-large} {  
+  .contact__box{
+    flex: 0 1 calc(100%/2);
+    text-align: left;
+    padding: 0 0 0 0;
+  }
+
+  .contact__title{
+    font-size: 3rem;
+  }
+
+  .contact__mail, .contact__tlf{
+    font-size: 1.5rem;
+  }
+
+  .contact__description{
+    font-size: 1rem;
+  }
+}
+
+@media #{$breakpoints-xlarge} {
+  .contact__box{
+    flex: 0 1 calc(100%/2);
+    text-align: left;
+    padding: 0 0 0 0;
+  }
+
+  .contact__title{
+    font-size: 3rem;
+  }
+
+  .contact__mail, .contact__tlf{
+    font-size: 1.5rem;
+  }
+
+  .contact__description{
+    font-size: 1rem;
+  }
+
+}
